@@ -18,21 +18,21 @@ function plotBisMet()
     xaprox2 = bisMet(f, 1, 3.2, eps);
     xaprox3 = bisMet(f, 3.2, 4, eps);
     
-    line(xlim, [0, 0])
-    line([0, 0], ylim)
+    line(xlim, [0, 0]);
+    line([0, 0], ylim);
     
-    plot(xaprox1, f(xaprox1), 'v')
-    text(xaprox1, f(xaprox1), 'xaprox1')
+    plot(xaprox1, f(xaprox1), 'v');
+    text(xaprox1, f(xaprox1), 'xaprox1');
     
-    plot(xaprox2, f(xaprox2), 'v')
-    text(xaprox2, f(xaprox2), 'xaprox2')
+    plot(xaprox2, f(xaprox2), 'v');
+    text(xaprox2, f(xaprox2), 'xaprox2');
     
-    plot(xaprox3, f(xaprox3), 'v')
-    text(xaprox3, f(xaprox3), 'xaprox3')
+    plot(xaprox3, f(xaprox3), 'v');
+    text(xaprox3, f(xaprox3), 'xaprox3');
     
-    xlabel('x')
-    ylabel('y')
-    title('Bisection Method')
+    xlabel('x');
+    ylabel('y');
+    title('Bisection Method');
     
     hold off;
 end
